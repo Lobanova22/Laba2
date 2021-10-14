@@ -13,7 +13,7 @@ public class ActionListener1 implements ActionListener {
 		public void actionPerformed(ActionEvent arg0) {
 			
 		if (ListenerFile.filePath == null) {
-		JOptionPane.showMessageDialog(null, subversion.info17, "Информация", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(null, subversion.info17, "Проверка", JOptionPane.PLAIN_MESSAGE);
 		} else {
 		try {
 		BufferedReader reader = new BufferedReader(new FileReader(ListenerFile.filePath));
@@ -23,7 +23,7 @@ public class ActionListener1 implements ActionListener {
 		subversion.info17 += line;
 		}
 		reader.close();
-		JOptionPane.showMessageDialog(null, subversion.info17, "Информация", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(null, subversion.info17, "Проверка", JOptionPane.PLAIN_MESSAGE);
 		} catch (IOException e) {
 		JOptionPane.showMessageDialog(null, "Файл не найден!" , "Ответ", JOptionPane.PLAIN_MESSAGE);
 

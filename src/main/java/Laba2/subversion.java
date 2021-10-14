@@ -25,10 +25,16 @@ public class subversion {
 	laba_info.setBounds(120,120,190,15);
 	main_panel.add(laba_info);
 	
-	JButton button_info = new JButton("Информация"); // добавляем кнопку 
-	button_info.setBounds(15,320,150,35);
+	JButton button_pro = new JButton("Проверка"); // добавляем кнопку 
+	button_pro.setBounds(15,320,150,35);
 	ActionListener actionListener1 = new ActionListener1(); //создаем слушатель
-	button_info.addActionListener(actionListener1); // добавляем слушатель к кнопке
+	button_pro.addActionListener(actionListener1); // добавляем слушатель к кнопке
+	main_panel.add(button_pro);
+	
+	JButton button_info = new JButton("Информация"); // добавляем кнопку
+	button_info.setBounds(248,320,150,35);
+	ActionListener info = new ActionListener2(); //создаем слушатель
+	button_info.addActionListener(info); // добавляем слушатель к кнопке
 	main_panel.add(button_info);
 	
 	JButton file = new JButton("Загрузка файла"); // добавляем кнопку 
